@@ -565,12 +565,22 @@ button {
      padding: 20px 0px 35px 0px;
 }
 
+.titlepage.subtitle{
+     width: fit-content;
+     margin: 0 auto;
+}
+
 .mobile_img figure {
      margin: 0;
 }
 
 .mobile_img figure img {
      width: 100%;
+}
+
+.mobile_img.redes figure img {
+     border-radius: 34%;
+     box-shadow: 0 0 6px #000;
 }
 
 .mobile .titlepage .read_more {
@@ -610,7 +620,8 @@ button {
      line-height: 35px;
 }
 
-.clients_box::after {
+/* aca viñeta */
+/* .clients_box::after {
      position: absolute;
      content: "";
      width: 42px;
@@ -618,7 +629,7 @@ button {
      bottom: -65px;
      background: url(../images/cli_cross.png);
      background-repeat: no-repeat;
-}
+} */
 
 .jonu {
      padding-top: 72px;
@@ -636,6 +647,12 @@ button {
      color: #00aeef;
      font-size: 17px;
      padding-bottom: 50px;
+}
+
+.jonu img {
+     width: 50%;
+     border-radius: 50px;
+     box-shadow: 0 0 6px #000;
 }
 
 
@@ -766,7 +783,7 @@ ul.cont li {
 }
 
 .copyright {
-     margin-top: 90px;
+     /* margin-top: 90px; */
      padding: 20px 0px;
      background-color: #00aeef;
 }
@@ -818,4 +835,16 @@ ul.cont li {
      max-width: 190px;
      position: relative;
      z-index: 10000;
+}
+
+.btn-close-modal {
+     width:100%;
+     text-align: center;
+     cursor:pointer;
+     color:#fff;
+     margin: 15px 0;
+}
+
+.modal-content{
+     border: none;
 }
