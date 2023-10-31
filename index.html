@@ -65,14 +65,14 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home</a>
-                                 </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link" href="#servicios">Servicios</a>
+                                    <a class="nav-link" href="#" id="home_link" onclick="goHome()">Home</a>
                                  </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
                                  </li> 
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#servicios">Servicios</a>
+                                 </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="#contacto">Contáctanos</a>
                                  </li>
@@ -135,44 +135,55 @@
          </a>
       </div>
       <!-- end banner -->
+
       <!-- about -->
+      <div id="nosotros"  class="mobile">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="titlepage">
+                     <h2>Sobre Nosotros</h2>
+                     <span></span>
+                     <p>Somos Eleva, una agencia de marketing digital comprometida con la misión de impulsar tu éxito en línea. Nuestra pasión es ayudar a las empresas a alcanzar su máximo potencial en el mundo digital. Con un equipo de expertos creativos y estrategas digitales.</p>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>Nuestra Misión</h2>
+                     <span></span>
+                     <p>En Eleva, nuestra misión es simple pero poderosa: hacerte sobresalir en un mundo en constante evolución. Trabajamos incansablemente para brindar soluciones de marketing digital que te ayuden a crecer, atraer nuevos clientes y aumentar tu presencia en línea.</p>
+                  </div>
+                  <div class="titlepage">
+                     <h2>Nuestra Visión</h2>
+                     <span></span>
+                     <p>Nuestra visión es ser reconocidos como líderes en la industria del marketing digital, creando estrategias innovadoras y resultados tangibles para nuestros clientes. Buscamos construir relaciones a largo plazo y ser tu socio confiable en tu viaje digital.</p>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="titlepage" style="text-align: center;">
+                     <h2>¿Por qué elegirnos?</h2>
+                     <span></span>
+                     <p>En Eleva, nos destacamos por nuestra dedicación a la excelencia. Lo que nos diferencia es:</p>
+                     <ul style="text-align: center;color: #fff;">
+                        <li>• Experiencia: Contamos con un equipo de expertos en marketing digital con años de experiencia en la industria.</li>
+                        <li>• Personalización: Cada estrategia que creamos es única y se adapta a las necesidades específicas de tu negocio.</li>
+                        <li>• Resultados Comprobados: Nuestros clientes han visto un aumento tangible en tráfico, conversiones y retorno de la inversión.</li>
+                        <li>• Nuestro Compromiso: En Eleva, nos enorgullece brindar servicios de marketing digital de alta calidad que se adaptan a tus necesidades específicas. Trabajamos en estrecha colaboración contigo para entender tus objetivos y crear estrategias personalizadas que te ayuden a alcanzarlos.</li>
+                     </ul>
+                  </div>
+                  <a style="color: #fff;margin: 20px auto 0;display: block;" target="_blank" href="https://api.whatsapp.com/send/?phone=593993494113&text&type=phone_number&app_absent=0" class="read_more">Contáctanos <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- services -->
       <div id="servicios"  class="about">
          <div class="container">
             <div class="titlepage subtitle">
                <h2>¡Nuestro Servicios!</h2>
                <span></span>
             </div>
-
-            <!-- MODAL MARKETING -->
-            <div id="modalMarketing">
-               <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-               <div class="close-modalMarketing btn-close-modal"> 
-                  <img src="images/web/close.svg" alt="">
-               </div>
-                     
-               <div class="modal-content">
-                  <div class="row row-modal container">
-                     <div class="col-md-8">
-                        <div class="text">
-                           <div class="titlepage">
-                              <h2>¡El contenido de calidad es el corazón de cualquier estrategia de marketing digital exitosa!</h2>
-                              <span></span>
-                           </div>
-                           En Eleva, creamos contenido atractivo y relevante que conecta con tu audiencia, fortalece tu presencia en línea y mejora tus rankings en los motores de búsqueda. Nuestro equipo de escritores y creadores de contenido trabaja contigo para desarrollar una estrategia de contenidos que te ayude a destacar.
-                           Creemos en el poder del marketing digital para transformar tu negocio. Nos enorgullece ofrecer soluciones que te ayudarán a destacar en un mundo digital en constante cambio. Con una combinación de creatividad, estrategia y experiencia, estamos aquí para impulsar tu éxito en línea.
-                           <b>¡Convierte con tus redes sociales!</b>
-                           Nos encargamos de la creación de diseños que captan la atención de tu audiencia. ¡Genera interacciones y más ventas creando un lazo con tu comunidad!
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="img">
-                           <img src="images/web/marketing.jpg" alt="">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
             <div class="row d_flex">
                <div class="col-md-7">
                   <div class="titlepage">
@@ -191,7 +202,7 @@
          </div>
       </div>
       <!-- end about -->
-      <!-- mobile -->
+      <!-- ADS -->
       <div id="mobile"  class="mobile">
          <div class="container">
             <div class="row d_flex">
@@ -202,17 +213,17 @@
                </div>
                <div class="col-md-7">
                   <div class="titlepage">
-                     <h2>Inspira con tus redes sociales</h2>
+                     <h2>Marketing de Contenidos y ADS (Publicidad en Línea)</h2>
                      <span></span>
-                     <p>Creamos contenidos que enamoraran a tu audiencia. Genera más interacciones y ventas, permitiéndole a tu negocio volar más alto.</p>
-                     <a class="read_more">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                     <p><b>Inspira con tus redes sociales</b><br>Creamos contenidos que enamoraran a tu audiencia. Genera más interacciones y ventas, permitiéndole a tu negocio volar más alto.</p>
+                     <a class="read_more" id="modal_redes" href="#modalRedes">Detalles <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- end mobile -->
-      <!-- clients -->
+      <!-- end ADS -->
+      <!-- SEO -->
       <div class="clients">
          <div class="container">
             <div class="row">
@@ -226,20 +237,44 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="clients_box">
-                     <p>Diseñamos, creamos y optimizamos páginas web orientadas a las ventas digitales.</p>
-                     <!-- <p>También creamos e-commerce para la venta de productos</p> -->
+                     <div class="titlepage" style="padding-bottom: 0;">
+                        <h2 style="font-size: 28px;">SEO (Optimización de Motores de Búsqueda)</h2>
+                        <span></span>
+                        <p style="margin: 15px 0 5px;"><b>¡La optimización de motores de búsqueda es esencial para ser encontrado en línea!</b><br></p>
+                        <p>Diseñamos, creamos y optimizamos páginas web orientadas a las ventas digitales.</p>
+                        <p>En Eleva, somos apasionados por el SEO y trabajamos para aumentar la visibilidad de tu sitio web en los resultados de búsqueda. Realizamos investigaciones exhaustivas de palabras clave, optimizamos tu sitio web y creamos estrategias de construcción de enlaces para asegurarnos de que tu negocio se destaque en línea.</p>
+                     </div>
                   </div>
                   <div class="jonu">
                      <img src="images/web/impula_web.jpg" alt="#"/>
-                     <!-- <h3>Andy Jimenez</h3>
-                     <strong>Alianza & Certificados</strong>
-                     <a class="read_more" href="#">Get A Quote</a> -->
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- end clients -->
+      <!-- end SEO -->
+
+      <!-- EMAIL MARKETING -->
+      <div id="mobile"  class="mobile" style="margin: 60px 0 0;">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="mobile_img redes">
+                     <figure><img src="images/web/email_marketing.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>Email Marketing</h2>
+                     <span></span>
+                     <p><b>El email marketing sigue siendo una poderosa herramienta para involucrar a tu audiencia y aumentar la lealtad del cliente. En Eleva, desarrollamos estrategias de email marketing personalizadas que impulsan la participación, aumentan las conversiones y fortalecen las relaciones con tus clientes. Desde campañas promocionales hasta boletines informativos, te ayudamos a aprovechar al máximo esta herramienta efectiva.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end EMAIL MARKETING -->
+
       <!--  contact -->
       <div id="contacto" class="contact">
          <div class="container">
@@ -250,7 +285,7 @@
                   </div>
                </div>
                <div class="col-md-6 offset-md-3">
-                  <form id="request" class="main_form" action="https://formsubmit.co/davidrsmk144@gmail.com" method="POST">
+                  <form id="request" class="main_form" action="https://formsubmit.co/eleva068@gmail.com" method="POST">
                      <div class="row">
                         <div class="col-md-12 ">
                            <input class="contactus" placeholder="Nombre" type="text" name="nombre"> 
@@ -288,6 +323,67 @@
             </div>
          </div>
       </footer>
+
+      <!-- MODALES -->
+      <!-- MODAL MARKETING -->
+      <div id="modalMarketing">
+         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+         <div class="close-modalMarketing btn-close-modal"> 
+            <img src="images/web/close.svg" alt="">
+         </div>
+               
+         <div class="modal-content">
+            <div class="row row-modal container">
+               <div class="col-md-8">
+                  <div class="text">
+                     <div class="titlepage">
+                        <h2>¡El contenido de calidad es el corazón de cualquier estrategia de marketing digital exitosa!</h2>
+                        <span></span>
+                     </div>
+                     En Eleva, creamos contenido atractivo y relevante que conecta con tu audiencia, fortalece tu presencia en línea y mejora tus rankings en los motores de búsqueda. Nuestro equipo de escritores y creadores de contenido trabaja contigo para desarrollar una estrategia de contenidos que te ayude a destacar.
+                     Creemos en el poder del marketing digital para transformar tu negocio. Nos enorgullece ofrecer soluciones que te ayudarán a destacar en un mundo digital en constante cambio. Con una combinación de creatividad, estrategia y experiencia, estamos aquí para impulsar tu éxito en línea.
+                     <b>¡Convierte con tus redes sociales!</b>
+                     Nos encargamos de la creación de diseños que captan la atención de tu audiencia. ¡Genera interacciones y más ventas creando un lazo con tu comunidad!
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="img">
+                     <img src="images/web/marketing.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- MODAL REDES -->
+      <div id="modalRedes">
+         <div class="close-modalRedes btn-close-modal"> 
+            <img src="images/web/close.svg" alt="">
+         </div>
+               
+         <div class="modal-content">
+            <div class="row row-modal container">
+               <div class="col-md-4">
+                  <div class="img">
+                     <img src="images/web/ads.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="text">
+                     <div class="titlepage">
+                        <h2>¡El contenido de calidad es el corazón de cualquier estrategia de marketing digital exitosa!</h2>
+                        <span></span>
+                     </div>
+                     <b>Marketing de Contenidos</b>
+                     Creamos contenido atractivo y relevante que conecta con tu audiencia, fortalece tu presencia en línea y mejora tus rankings en los motores de búsqueda. Nuestro equipo de escritores y creadores de contenido trabaja contigo para desarrollar una estrategia de contenidos que te ayude a destacar.
+                     <br><b>ADS:</b>
+                     En Eleva, somos expertos en la gestión de campañas publicitarias en línea altamente efectivas. Nuestro enfoque en la publicidad digital incluye la creación y gestión de anuncios en plataformas como Google Ads y Facebook Ads. Utilizamos estrategias personalizadas para maximizar el retorno de la inversión y atraer a tu audiencia objetivo de manera rentable.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -309,6 +405,51 @@
             animatedOut:'bounceOutDown',
             color:'#3498db',
          });
+         
+         $('#modal_redes').animatedModal({
+            animatedIn:'lightSpeedIn',
+            animatedOut:'bounceOutDown',
+            color:'#3498db',
+         });
+
+         function goHome(){
+            scrollToTop()
+         }
+
+         function scrollToTop() {
+            const startPosition = window.pageYOffset; // Posición actual de desplazamiento
+            const distance = 0 - startPosition; // Distancia hasta el inicio de la página
+            const duration = 500; // Duración de la animación en milisegundos
+
+            let startTime;
+
+            // Función de animación
+            function animation(currentTime) {
+               if (!startTime) {
+                     startTime = currentTime;
+               }
+
+               const timeElapsed = currentTime - startTime;
+               const nextPosition = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+
+               window.scrollTo(0, nextPosition);
+
+               if (timeElapsed < duration) {
+                     requestAnimationFrame(animation);
+               }
+            }
+
+            // Efectuar la animación
+            requestAnimationFrame(animation);
+         }
+
+         // Función para aplicar una función de aceleración (ease-in-out)
+         function easeInOutCubic(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return (c / 2) * t * t * t + b;
+            t -= 2;
+            return (c / 2) * (t * t * t + 2) + b;
+         }
        </script>
    </body>
 </html>
